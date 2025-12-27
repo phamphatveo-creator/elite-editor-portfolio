@@ -1,0 +1,8 @@
+{
+  "name": "Elite Editor Portfolio",
+  "description": "A high-end, dark-themed portfolio for video editors featuring real-time video upload/preview and AI-powered caption generation.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
