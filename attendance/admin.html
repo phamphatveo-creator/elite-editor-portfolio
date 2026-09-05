@@ -29,7 +29,7 @@ try{
  let html=await (await fetch(BASE,{cache:'no-store'})).text();
  if(!html.includes('panel-reports')||!html.includes('panel-employees')||!html.includes('panel-schedules'))throw new Error('base_mismatch');
  html=html.replace('</style>',css+'</style>');
- html=html.replace('</body>','<script>'+patch.replace(/<\\/script>/gi,'<\\/script>')+'<\\/script></body>');
+ html=html.replace('</body>','<script>'+patch+'<\\/script></body>');
  document.open();document.write(html);document.close();
 }catch(e){document.getElementById('boot').innerHTML='<b style="color:#b91c1c">Không tải được Admin.</b><br>Vui lòng reload lại trang.';console.error(e)}
 })();
